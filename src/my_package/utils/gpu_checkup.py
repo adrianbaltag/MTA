@@ -1,3 +1,5 @@
+"""This script check if CUDA is available on the system in order to use GPU with Torch and print GPU info"""
+
 import pyautogui
 import torch
 
