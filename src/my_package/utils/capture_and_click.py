@@ -80,4 +80,4 @@ def capture_and_click(app_name, screenshot_name, keyword):
 
 
 if __name__ == "__main__":
-    capture_and_click("Udemy", "screenshot", "100 Days of Code")
+    capture_and_click("YouTube", "screenshot", "Trending")
