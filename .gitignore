@@ -34,3 +34,6 @@ wheels/
 # OS specific files
 .DS_Store
 Thumbs.db
+
+# images
+*.png
