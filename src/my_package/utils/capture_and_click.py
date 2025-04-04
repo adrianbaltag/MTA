@@ -18,6 +18,7 @@ def capture_and_click(app_name, screenshot_name, keyword):
     """Captures a screenshot of the browser window, searches for a keyword, and clicks it.
 
     Args:
+    app_name (str): Title of the browser window to capture.
         screenshot_name (str): Name of the screenshot file (without extension).
         keyword (str): The text to search for using OCR and regex.
     """
