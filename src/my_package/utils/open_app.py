@@ -4,7 +4,7 @@ import time
 import webbrowser
 
 # import the URLs from config.py
-from my_package.utils.config import URL_YOUTUBE
+from my_package.utils.config import URL_FORMY
 
 
 def open_app(url):
@@ -17,4 +17,4 @@ def open_app(url):
 
 
 if __name__ == "__main__":
-    open_app(URL_YOUTUBE)
+    open_app(URL_FORMY)
