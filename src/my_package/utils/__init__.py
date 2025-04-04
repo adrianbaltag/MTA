@@ -6,6 +6,7 @@ from .capture_and_click import capture_and_click
 from .config import URL_FORMY, URL_GOOGLE, URL_YOUTUBE
 from .gpu_checkup import gpu_checkup
 from .open_app import open_app
+from .user_input import user_input
 
 __all__ = [
     "gpu_checkup",
@@ -14,4 +15,5 @@ __all__ = [
     "URL_GOOGLE",
     "URL_FORMY",
     "open_app",
+    "user_input",
 ]

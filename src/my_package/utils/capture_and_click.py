@@ -80,4 +80,4 @@ def capture_and_click(app_name, screenshot_name, keyword):
 
 
 if __name__ == "__main__":
-    capture_and_click("YouTube", "screenshot", "Trending")
+    capture_and_click("Formy", "screenshot", "Enter last name")
