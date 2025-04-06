@@ -5,12 +5,17 @@ import time
 import keyboard
 
 from my_package.utils.capture_and_click import capture_and_click
+from my_package.utils.capture_full_screenshot import capture_full_screenshot
 from my_package.utils.config import URL_FORMY
 from my_package.utils.open_app import open_app
+from my_package.utils.read_image import read_image
 from my_package.utils.user_input import user_input
 
 
 def remedy():
+    """__summary__:Main function to execute the remedy logic.
+    It opens a specific URL, captures a screenshot, and processes the image to extract text.
+    """
     nrb_ticket = (
         user_input()
     )  # Call the user_input function to get the NRB ticket number
@@ -21,11 +26,20 @@ def remedy():
 
     capture_and_click(
         "Formy", "screenshot", "Enter last name"
-    )  # Capture the screenshot and click on the form
+    )  # Capture the screenshot and click on the input field
 
     time.sleep(1)  # Wait for the screenshot to be taken
     keyboard.write(nrb_ticket)
     keyboard.press_and_release("enter")
+    time.sleep(3)  # Wait for loading the page
+    capture_full_screenshot(
+        6
+    )  # Capture the full screenshot of the page based on tab index
+    time.sleep(1)  # Wait for the screenshot to be taken
+    res = read_image(
+        0, "First name", "Last name", "Job title"
+    )  # Read the image and extract text
+    print(res)  # Print the extracted text
 
 
 if __name__ == "__main__":
