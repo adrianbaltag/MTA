@@ -7,6 +7,7 @@ from .capture_full_screenshot import capture_full_screenshot
 from .config import URL_FORMY, URL_GOOGLE, URL_YOUTUBE
 from .gpu_checkup import gpu_checkup
 from .open_app import open_app
+from .read_image import read_image
 from .user_input import user_input
 
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
     "open_app",
     "user_input",
     "capture_full_screenshot",
+    "read_image",
 ]
