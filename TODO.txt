@@ -1,3 +1,3 @@
-Update "read_image.py" func. to comply with the changed script
+Update "read_image.py" func. to comply with the changed script   DONE
 Need to export the saved text to a .txt file with ticket # as title into folder dir(create new folder - same level with "images")
 Create a funct to copy from the above .txt file to a word doc and save it on your Desktop
