@@ -283,7 +283,7 @@ def read_image(img_index, *keys):
             bbox, text, confidence = detection
         elif len(detection) == 2:
             bbox, text = detection
-            confidence = 0.0  # Default confidence if not provided
+            confidence = 0.9  # Default confidence if not provided
         else:
             logging.warning(f"Unexpected detection format: {detection}")
             continue
@@ -441,5 +441,5 @@ def read_image(img_index, *keys):
 
 if __name__ == "__main__":
     # Example usage: Reads text from the first image in the images folder
-    result = read_image(0, "You entered")
+    result = read_image(2, "First name", "Last name", "Job title")
     print(result)
