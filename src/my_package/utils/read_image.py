@@ -248,6 +248,7 @@ def read_image(img_index, *keys):
         return None
 
     # Try reading the image using OpenCV
+    # pylint: disable=no-member
     img = cv2.imread(img_path)
 
     if img is None:
@@ -264,6 +265,7 @@ def read_image(img_index, *keys):
             return None
 
     # Convert image to grayscale for better OCR accuracy
+    # pylint: disable=no-member
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # Initialize EasyOCR reader with better text detection parameters
