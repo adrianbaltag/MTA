@@ -43,7 +43,6 @@ def remedy():
     # print(res)  # Print the extracted text
     time.sleep(1)  # Wait for the image to be processed
     save_dict_to_text(res)  # Save the extracted text to a text file on the desktop
-    # time.sleep(1)  # Wait for the file to be saved
 
 
 if __name__ == "__main__":
