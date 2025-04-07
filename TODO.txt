@@ -1,4 +1,4 @@
 Update "read_image.py" func. to comply with the changed script   DONE
 Need to export the saved text to a .txt file with ticket # as title into  a folder dir(create new folder - txt_data on Desktop)   DONE
 Create a funct to copy from the above .txt file to a word doc and save it on your Desktop
-Create a function that will run last in each app, and will delete the "images" folder content
+Create a function that will run last in each app, and will delete the "images" folder content   
