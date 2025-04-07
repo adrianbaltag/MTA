@@ -38,5 +38,3 @@ Thumbs.db
 # Ignore PNG files only in the images folder
 images/*.png
 
-# ignore .bat files in the scripts folder
-scripts/*.bat
