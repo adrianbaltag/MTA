@@ -9,6 +9,7 @@ from my_package.utils.capture_full_screenshot import capture_full_screenshot
 from my_package.utils.config import URL_FORMY
 from my_package.utils.open_app import open_app
 from my_package.utils.read_image import read_image
+from my_package.utils.save_dict_to_text import save_dict_to_text
 from my_package.utils.user_input import user_input
 
 
@@ -25,7 +26,7 @@ def remedy():
     time.sleep(1)  # Wait for the form to load
 
     capture_and_click(
-        "Formy", "screenshot", "Enter last name"
+        "Formy", "screenshot", "Enter first name"
     )  # Capture the screenshot and click on the input field
 
     time.sleep(1)  # Wait for the screenshot to be taken
@@ -39,7 +40,9 @@ def remedy():
     res = read_image(
         0, "First name", "Last name", "Job title"
     )  # Read the image and extract text
-    print(res)  # Print the extracted text
+    # print(res)  # Print the extracted text
+    time.sleep(1)  # Wait for the image to be processed
+    save_dict_to_text(res)  # Save the extracted text to a text file on the desktop
 
 
 if __name__ == "__main__":

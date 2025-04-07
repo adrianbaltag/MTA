@@ -8,6 +8,7 @@ from .config import URL_FORMY, URL_GOOGLE, URL_YOUTUBE
 from .gpu_checkup import gpu_checkup
 from .open_app import open_app
 from .read_image import read_image
+from .save_dict_to_text import save_dict_to_text
 from .user_input import user_input
 
 __all__ = [
@@ -20,4 +21,5 @@ __all__ = [
     "user_input",
     "capture_full_screenshot",
     "read_image",
+    "save_dict_to_text",
 ]

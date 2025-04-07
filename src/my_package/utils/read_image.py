@@ -441,5 +441,5 @@ def read_image(img_index, *keys):
 
 if __name__ == "__main__":
     # Example usage: Reads text from the first image in the images folder
-    result = read_image(2, "First name", "Last name", "Job title")
+    result = read_image(3, "First name", "Last name", "Job title")
     print(result)
