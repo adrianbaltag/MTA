@@ -35,11 +35,8 @@ wheels/
 .DS_Store
 Thumbs.db
 
-<<<<<<< HEAD
-# images
-*.png
-=======
+
 # Ignore PNG files only in the images folder
 images/*.png
 
->>>>>>> cca6db26404cbffabc65c03fa9f93d8008a273a9
+

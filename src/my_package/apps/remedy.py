@@ -54,7 +54,7 @@ def remedy():
     )  # Call the user_input function to get the NRB ticket number
     time.sleep(1)  # Wait for the user input to be processed
 
-    open_app(URL_FORMY)  # Open the form URL in the default web browser
+    open_app(URL_FORMY, index=2)  # Open the form URL in the default web browser
     time.sleep(1)  # Wait for the form to load
 
     capture_and_click(
