@@ -254,4 +254,4 @@ def open_app(url, index=None):
 
 
 if __name__ == "__main__":
-    open_app(URL_FORMY, index=1)
+    open_app(URL_FORMY, index=2)

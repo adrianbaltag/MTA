@@ -221,7 +221,7 @@ def capture_and_click(screenshot_name, keyword, monitor_index=0):
 if __name__ == "__main__":
     # Example: Search for and click on "Enter last name" on monitor 0
 
-    capture_and_click("screenshot", "Enter last name", 1)
+    capture_and_click("screenshot", "Enter last name", 0)
 
     # For other monitors:
     # capture_and_click("screenshot", "Enter last name", 1)  # Second monitor (index 1)
