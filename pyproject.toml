@@ -8,6 +8,7 @@ requires-python = ">=3.8"
 dependencies = [
     "easyocr>=1.7.0",
     "keyboard>=0.13.5",
+    "mss>=9.0.2",
     "pyautogui>=0.9.54",
     "pywinauto>=0.6.9",
     "screeninfo>=0.8.1",
