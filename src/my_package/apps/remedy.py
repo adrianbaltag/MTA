@@ -60,16 +60,16 @@ def remedy():
     time.sleep(1)  # Wait for the form to load
 
     capture_and_click(
-        "Formy", "screenshot", "Enter first name"
-    )  # Capture the screenshot and click on the input field
+        "screenshot", "Enter last name", 2
+    )  # select same index as open_app
 
     time.sleep(1)  # Wait for the screenshot to be taken
     keyboard.write(nrb_ticket)
     keyboard.press_and_release("enter")
     time.sleep(3)  # Wait for loading the page
     capture_full_screenshot(
-        6
-    )  # Capture the full screenshot of the page based on tab index
+        monitor_index=2
+    )  # Capture the full screenshot of the selected monitor
     time.sleep(1)  # Wait for the screenshot to be taken
     res = read_image(
         0, "First name", "Last name", "Job title"

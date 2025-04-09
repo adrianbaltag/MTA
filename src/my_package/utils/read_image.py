@@ -212,7 +212,7 @@ def read_image(img_index, *keys):
     # Get the path to the images folder
     app_dir = os.path.dirname(__file__)
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    imgs_folder = os.path.join(base_dir, "images")
+    imgs_folder = os.path.join(base_dir, "img_to_read")
 
     # Get a sorted list of image files in the folder
     image_files = sorted(
@@ -441,5 +441,5 @@ def read_image(img_index, *keys):
 
 if __name__ == "__main__":
     # Example usage: Reads text from the first image in the images folder
-    result = read_image(3, "First name", "Last name", "Job title")
+    result = read_image(0, "First name", "Last name", "Job title")
     print(result)
