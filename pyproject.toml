@@ -1,0 +1,25 @@
+[project]
+name = "mta"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "easyocr>=1.7.2",
+    "keyboard>=0.13.5",
+    "mss>=10.0.0",
+    "opencv-python>=4.11.0.86",
+    "pyautogui>=0.9.54",
+    "pywinauto>=0.6.9",
+    "screeninfo>=0.8.1",
+]
+
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# make sure to set the package directory to src to avoid import errors
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages.find = { where = ["src"] }

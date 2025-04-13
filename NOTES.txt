@@ -1,0 +1,48 @@
+
+
+
+=========USING UV --> creating venv, installing dep=================
+
+
+
+
+
++++++upgrade pip to its latest version:
+
+python -m pip install --upgrade pip
+
++++create the venv  / activate it
+
+python -m venv .venv
+.venv\Scripts\activate
+
+++++++install uv in working folder(fresh created on desktop)
+
+pip install uv 
+
++++++verify uv version:
+
+uv --version
+
+++++create default uv folder management inide the working dir
+
+uv init .
+
+
++++++  INSTALL ALL DEP. (from a cloned repo- using - created / using UV)
+
+a) uv install .
+
+b) run the "install.py" ---> to install properly the pytorch + CUDA
+
+
+************FOR DEV ONLY********************************************************************
+
+=====================MODIFY SCRIPT --> for work==============
+1. In "img_to_read" folder --> add the 'remedy screenshot' 
+2. In "remedy.py":
+    a) change the URL(remedy) on import
+    b) open_app --> replace URL and choose the screen index(optional)
+    c) capture_and_click --> change the name of screenshot(optional), change the label(accordingly to remedy -ticket#), monitor index(same as open_app)
+    d) capture_full_screenshot --> monitor_index MUST be same  as open_app / capture_and_click
+    e) save_dict_to_text --> modify the args accordingly (based on remedy)
