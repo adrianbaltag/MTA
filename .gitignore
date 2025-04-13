@@ -37,6 +37,6 @@ Thumbs.db
 
 
 # Ignore PNG files only in the images folder
-images/*.png
+**/images/*.png
 # Ignore PNG files in img_to_read folder
-img_to_read/*.png 
+**/img_to_read/*.png 
