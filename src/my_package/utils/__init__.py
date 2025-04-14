@@ -4,6 +4,7 @@ This module initializes the utils package.
 
 from .capture_and_click import capture_and_click
 from .capture_full_screenshot import capture_full_screenshot
+from .classes import ScreenshotUtility
 from .config import URL_FORMY, URL_GOOGLE, URL_YOUTUBE
 from .gpu_checkup import gpu_checkup
 from .open_app import open_app
@@ -22,4 +23,5 @@ __all__ = [
     "capture_full_screenshot",
     "save_dict_to_text",
     "read_image",
+    "ScreenshotUtility",
 ]
