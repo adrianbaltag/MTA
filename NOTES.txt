@@ -31,7 +31,7 @@ uv init .
 
 +++++  INSTALL ALL DEP. (from a cloned repo- using - created / using UV)
 
-a) uv install .
+a) uv pip install .
 
 b) run the "install.py" ---> to install properly the pytorch + CUDA
 
@@ -45,4 +45,4 @@ b) run the "install.py" ---> to install properly the pytorch + CUDA
     b) open_app --> replace URL and choose the screen index(optional)
     c) capture_and_click --> change the name of screenshot(optional), change the label(accordingly to remedy -ticket#), monitor index(same as open_app)
     d) capture_full_screenshot --> monitor_index MUST be same  as open_app / capture_and_click
-    e) save_dict_to_text --> modify the args accordingly (based on remedy)
+    
