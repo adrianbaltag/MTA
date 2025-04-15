@@ -1,0 +1,10 @@
+=====NSP=====
+1. open app [url]
+2. add mdn  in correct input field and click "enter"
+3. select the tab to see "most used sites - 4G" and take screenshot of it(save it to "images" dir.
+4. click on "CO any" / "CR any" / "DROPPED CALLS" / "DEGRADED SERVICE"
+5. screenshot & get text from "result summary" and append it to existing .txt file
+6. click INBULIDING tab
+7. check for femto(add the text to .txt file regardless have / not have femto)
+8. screenshots of RSPP / RSRQ --> save to "images" dir
+9. click to get the most used sites( if a site is 90% or more - keep only one site, otherwise add other sites to .txt)
