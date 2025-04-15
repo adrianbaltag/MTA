@@ -8,8 +8,8 @@ screenshot_tool = ScreenshotUtility()
 # Take a screenshot that includes both words
 saved_picture, picture_location = screenshot_tool.capture_area_by_multiple_text(
     [
-        "id",
-        "BOM",
+        "Top Most Used Carriers (4G)",
+        "Last used (UTC)",
     ]
 )
 

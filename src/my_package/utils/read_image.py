@@ -50,12 +50,41 @@ def read_image(img_index: int) -> dict:
 
     # Use EasyOCR to read the text from the image
     result = reader.readtext(img, detail=0, paragraph=True)
+    print(result)
 
-    # Create a dictionary with paragraph numbers as keys and text as values
-    result_dict = {f"paragraph_{i + 1}": text for i, text in enumerate(result)}
-    print(result_dict)
-    return result_dict
+    ticket_number = "Trouble-ID"
+    try:
+        # Find the index of the element in the result list
+        index = result.index(ticket_number)
+        # print(f"Element '{ticket_number}' found at index: {index}")
+    except ValueError:
+        print(f"Element '{ticket_number}' not found in the result list.")
+    ticket = result[index + 1]
+    print(f"Ticket number: {ticket}")
+
+    cx_mdn = "MDN"
+    try:
+        # Find the index of the element in the result list
+        index = result.index(cx_mdn)
+        # print(f"Element '{cx_mdn}' found at index: {index}")
+    except ValueError:
+        print(f"Element '{cx_mdn}' not found in the result list.")
+    mdn = result[index + 1]
+    print(f"MDN: {mdn}")
+
+    prob_desc = "Problem Description"
+    try:
+        # Find the index of the element in the result list
+        index = result.index(prob_desc)
+        # print(f"Element '{prob_desc}' found at index: {index}")
+    except ValueError:
+        print(f"Element '{prob_desc}' not found in the result list.")
+    issue = result[index + 1]
+    print(f"Problem description: {issue}")
+    # # Create a dictionary with paragraph numbers as keys and text as values
+
+    return ticket, mdn, issue
 
 
 if __name__ == "__main__":
-    read_image(3)
+    read_image(1)

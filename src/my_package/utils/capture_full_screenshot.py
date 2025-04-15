@@ -2,6 +2,7 @@
 
 # pylint: disable=E0401, W0105,W0012,W0612, F841, C0301
 import os
+import time
 
 import mss
 import mss.tools
@@ -44,7 +45,7 @@ def capture_full_screenshot(monitor_index: int = 0):
         # Get the requested monitor (add 1 because mss uses 1-based indexing, with 0 being "all monitors")
         target_monitor = monitors[monitor_index + 1]
         print(f"[INFO] Using monitor {monitor_index}: {target_monitor}")
-
+        time.sleep(5)  # Wait for the monitor to be ready
         # Capture screenshot of the entire monitor
         print(f"[INFO] Capturing monitor {monitor_index}...")
         screenshot = sct.grab(target_monitor)
@@ -69,4 +70,4 @@ def capture_full_screenshot(monitor_index: int = 0):
 
 if __name__ == "__main__":
     # Capture the first monitor (index 0)
-    capture_full_screenshot(monitor_index=2)
+    capture_full_screenshot(monitor_index=3)
