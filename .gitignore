@@ -36,7 +36,7 @@ wheels/
 Thumbs.db
 
 
-# Ignore PNG files only in the images folder
-**/images/*.png
-# Ignore PNG files in img_to_read folder
-**/img_to_read/*.png 
+# # Ignore PNG files only in the images folder
+# **/images/*.png
+# # Ignore PNG files in img_to_read folder
+# **/img_to_read/*.png 
