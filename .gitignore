@@ -42,5 +42,5 @@ Thumbs.db
 **/img_to_read/*.png 
 
 # IGNORE THE CONFIG FILES from utils folder
-**/utils/config/*.py
+src/my_package/utils/config.py
 
